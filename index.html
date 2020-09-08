@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ENOCTA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="icon" href="https://w0.pngwave.com/png/380/698/computer-icons-emoticon-wink-smiley-happy-png-clip-art.png" type="image/x-icon" />
+  <script type="text/javascript" src="currentprice.json"></script>
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" style="width:90px;">
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="https://www.linkedin.com/in/e-deniz-celik/" target="_blank">Eda Deniz Çelik</a></li>
+
+                <li><a href="mailto:e.deniz.celik@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+    </div>
+</nav>
+
+<!-- Navbar end -->
+
+
+<!-- Counter -->
+    <div id="counter" class="ct">
+        <div class="btn-group btn-group-lg">
+            <input type = "button" class="btn btn-default" onclick="addHour()" value="+"><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type = "button" class="btn btn-default" onclick="addMin()" value="+"><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type = "button" class="btn btn-default" onclick="addSec()" value="+">
+        </div>
+
+        <p id="demo"></p>
+
+        <div class="btn-group btn-group-lg">
+            <input type = "button" class="btn btn-default" onclick="subHour()" value="-"><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type = "button" class="btn btn-default" onclick="subMin()" value="-"><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type = "button" class="btn btn-default" onclick="subSec()" value="-">
+
+-       </div>
+
+    </div>
+
+<!-- Counter end -->
+
+
+<!-- Bitcoin part -->
+
+<div style="height: 500px">
+    <h2 class="myH2">Bitcoin</h2>
+    <div id="myData" style="font-weight: bold;"></div>
+</div>
+
+<!-- Bitcoin part ends -->
+
+
+<!-- Open/Close navbar toggle -->
+<script src="myscripts.js"></script>
+
+
+<footer>
+    Eda Deniz Çelik
+</footer>
+
+
+</body>
+</html>
